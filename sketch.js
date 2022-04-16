@@ -81,6 +81,7 @@ function draw() {
     if(gamestate === "END") {
         if(mousePressedOver(play)) {
             replay();
+            score = 0;
         }
     }
 
