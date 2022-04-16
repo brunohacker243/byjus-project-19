@@ -174,11 +174,13 @@ function draw() {
             plantgroup.destroyEach();
             gamemusic.play();
             gamemusic.loop = true;
+            score = 0;
         }
 
 } else if(gamestate === "END") {
     if(mousePressedOver(play)) {
         replay();
+        score = 0;
     }
 }
 
@@ -220,4 +222,5 @@ function replay() {
     plantgroup.destroyEach();
     gamemusic.play();
     gamemusic.loop = true;
+    score = 0;
 }
